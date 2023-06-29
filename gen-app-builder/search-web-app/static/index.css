@@ -61,7 +61,8 @@ body {
   margin: auto;
 }
 
-.language-selection, .document-selection {
+.language-selection,
+.document-selection {
   display: flex;
   width: 300px;
   margin: auto;

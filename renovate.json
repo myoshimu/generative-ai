@@ -1,7 +1,5 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "prConcurrentLimit": 0,
   "lockFileMaintenance": {
     "enabled": true,
@@ -9,12 +7,7 @@
   },
   "packageRules": [
     {
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "lockFileMaintenance",
-        "bump"
-      ],
+      "matchUpdateTypes": ["minor", "patch", "lockFileMaintenance", "bump"],
       "automerge": true
     }
   ],

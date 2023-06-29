@@ -58,6 +58,7 @@ Additional features include how to search the public Cloud Knowledge Graph using
 1. Update the `consts.py` file with your own `PROJECT_ID` and `LOCATION`.
 
 2. Configure Enterprise Search
+
    - To use the prebuilt widget provided in the Cloud Console for Enterprise, Copy the `configId` from the `<gen-search-widget>` in the `Integration > Widget` tab.
      - ![configId](img/configId.png)
      - Be sure to set authorization type as `Public Access` and add your web application url to the `Allowed Domains` once it's deployed.
@@ -68,11 +69,12 @@ Additional features include how to search the public Cloud Knowledge Graph using
        - Datastore ID is `website-search-engine_1681248733152`
 
 3. Configure Personalize
+
    - Add the datastore id and engine id for your personalize engine to `PERSONALIZE_DATASTORE_IDs` in `consts.py`.
    - The datastore id is visible on the `Data > Details` page.
    - The engine id is the string after `/engines/` in the Cloud Console URL.
-       - `https://console.cloud.google.com/gen-app-builder/engines/contracts-personalize_1687884886933/data/records`
-       - Engine ID is `contracts-personalize_1687884886933`
+     - `https://console.cloud.google.com/gen-app-builder/engines/contracts-personalize_1687884886933/data/records`
+     - Engine ID is `contracts-personalize_1687884886933`
 
 4. Deploy the Cloud Run app in your project.
 
@@ -102,7 +104,6 @@ Try example queries with each search engine:
 [enterprisesearch]: https://cloud.google.com/enterprise-search
 [try_personalize]: https://cloud.google.com/generative-ai-app-builder/docs/try-personalize
 [try_search]: https://cloud.google.com/generative-ai-app-builder/docs/try-enterprise-search
-
 [contract]: https://genappbuilder-demo-lnppzg3rxa-uc.a.run.app/
 [finance]: https://genappbuilder-demo-lnppzg3rxa-uc.a.run.app/
 [websearch]: https://genappbuilder-demo-lnppzg3rxa-uc.a.run.app/search
